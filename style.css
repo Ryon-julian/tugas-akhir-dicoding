@@ -194,6 +194,34 @@ main::after {
     padding: 20px;
 }
 
+.box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    grid-template-columns: 25% 25% 25%;
+}
+
+.card {
+    height: 325px;
+    width: 200px;
+    padding: 20px 35px;
+    background: #0E8388;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card h1 {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #CBE4DE
+}
+
 /* end portfolio */
 /* footer start */
 /* footer {
