@@ -76,7 +76,7 @@ main::after {
     position: relative;
     color: #CBE4DE;
     font-size: 20px;
-    background: red;
+    /* background: red; */
 }
 
 .input {
@@ -114,22 +114,22 @@ main::after {
     text-align: center;
     color: #CBE4DE;
     font-size: 12px;
-    background: green;
+    /* background: green; */
 }
 
 .profile img {
-    width: 20px;
+    width: 100px;
 }
 
 /* hero end */
 
 .row {
-    padding: 30px;
+    padding: 10px;
     position: relative;
     display: grid;
     text-align: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     color: #CBE4DE;
     background-color: #0E8388;
     /* grid-template-rows: 10px; */
@@ -141,7 +141,7 @@ main::after {
     color: #CBE4DE;
     font-size: 16px;
     text-align: center;
-    padding: 20px;
+    padding: 50px 10px 0px;
 }
 
 .service-box {
@@ -191,44 +191,176 @@ main::after {
     color: #CBE4DE;
     font-size: 16px;
     text-align: center;
-    padding: 20px;
+    padding: 50px 0px 0px;
 }
 
 .box {
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
     grid-template-columns: 25% 25% 25%;
 }
 
 .card {
-    height: 325px;
+    color: #CBE4DE;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #111;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    border-width: 3px;
     width: 200px;
     padding: 20px 35px;
     background: #0E8388;
     border-radius: 20px;
-    margin: 15px;
-    position: relative;
+    margin: 30px;
     overflow: hidden;
-    text-align: center;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    max-height: 0;
+    opacity: 0;
+    font-size: 0;
+    transition: 0.45s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'lebih banyak';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'lebih sedikit';
+}
+
+.read-more-trigger {
+    color: #CBE4DE;
+    background-color: #2e4f4f;
+    margin-top: 10px;
+    padding: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 2;
+    border-radius: 10px;
 }
 
 .card h1 {
-    font-size: 50px;
-    display: block;
+    font-size: 24px;
+    display: flex;
     text-align: center;
-    margin: 25px 0px;
+    color: #2e4f4f
+}
+
+.text-card {
+    font-size: 12px;
+    text-align: start;
     color: #CBE4DE
 }
 
 /* end portfolio */
-/* footer start */
-/* footer {
-    background-color: blueviolet;
+
+/* Testimoni */
+.testimoni {
+    position: relative;
+    color: #CBE4DE;
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 0px 0px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    /* background-color: #efefef; */
+}
+
+.card-wrapper {
+    min-height: 40px;
+    /* grid-template-columns: 10% 10% 10%; */
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.card-testimoni {
+    color: #2e4f4f;
+    width: 320px;
+    border-radius: 25px;
+    background-color: #CBE4DE;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+}
+
+.overlay {
     position: absolute;
-    bottom: 0;
-} */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0E8388;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #CBE4DE;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* end testimoni */
+
+/* footer start */
+footer {
+    color: #CBE4DE;
+    background-color: #0E8388;
+    position: absolute;
+}
 
 /* footer end */
 
