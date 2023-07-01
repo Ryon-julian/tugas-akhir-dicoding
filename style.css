@@ -129,10 +129,8 @@ main::after {
     display: grid;
     text-align: center;
     align-items: center;
-    /* width: 100%; */
     color: #CBE4DE;
     background-color: #0E8388;
-    /* grid-template-rows: 10px; */
     grid-template-columns: 25% 25% 25% 25%;
 }
 
@@ -355,11 +353,29 @@ main::after {
 
 /* end testimoni */
 
+/* contact */
+.contact {
+    color: #CBE4DE;
+    padding: 10PX;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    color: #CBE4DE;
+    padding: 10px;
+}
+
+.contact-me img {
+    width: 30px;
+}
+
 /* footer start */
 footer {
     color: #CBE4DE;
     background-color: #0E8388;
-    position: absolute;
+
+    /* position: absolute; */
 }
 
 /* footer end */
@@ -372,16 +388,85 @@ footer {
         width: 100%;
     }
 
+    .newslatter {
+        font-size: 12px;
+    }
+
+    .profile {
+        font-size: 8px;
+    }
+
+    .newslatter form input:first-child {
+        display: inline-block;
+        padding: 1px;
+        border: 1px solid #0E8388;
+        outline: none;
+        border-radius: 30px;
+    }
+
     .newslatter form input:last-child {
         position: absolute;
         outline: none;
         border: none;
-        padding: 15px 30px;
+        padding: 1px;
         border-radius: 30px;
-        left: 220px;
+        left: 130px;
         top: 0px;
         background-color: #0E8388;
         color: #CBE4DE;
         box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    }
+
+    .service {
+        color: #CBE4DE;
+        font-size: 12px;
+        text-align: center;
+        padding: 50px 10px 0px;
+    }
+
+    .service-box {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 50px 50px;
+        grid-gap: 2rem;
+    }
+
+    .Portfolio {
+        position: relative;
+        color: #CBE4DE;
+        font-size: 12px;
+        text-align: center;
+        padding: 50px 0px 0px;
+    }
+
+    .box {
+        display: block;
+        position: relative;
+        align-items: center;
+    }
+
+    .card {
+        color: #CBE4DE;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #111;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-width: 3px;
+        background: #0E8388;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .testimoni {
+        position: relative;
+        color: #CBE4DE;
+        font-size: 12px;
+        text-align: center;
+        padding: 50px 0px 0px;
     }
 }
