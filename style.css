@@ -168,6 +168,7 @@ main::after {
 }
 
 .view-btn {
+    font-family: 'Jua', sans-serif;
     background-color: #0E8388;
     font-size: 12px;
     color: #CBE4DE;
@@ -383,9 +384,19 @@ footer {
 
 
 /* media quere */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
 @media screen and (max-width: 576px) {
     main>div {
         width: 100%;
+    }
+
+    nav ul {
+        gap: 10px;
     }
 
     .newslatter {
@@ -397,6 +408,7 @@ footer {
     }
 
     .newslatter form input:first-child {
+        font-size: 10px;
         display: inline-block;
         padding: 1px;
         border: 1px solid #0E8388;
@@ -406,6 +418,7 @@ footer {
 
     .newslatter form input:last-child {
         position: absolute;
+        font-size: 10px;
         outline: none;
         border: none;
         padding: 1px;
@@ -468,5 +481,16 @@ footer {
         font-size: 12px;
         text-align: center;
         padding: 50px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav ul {
+        display: contents;
+    }
+
+    .newslatter form input:last-child {
+        position: relative;
+        left: 0px;
     }
 }
