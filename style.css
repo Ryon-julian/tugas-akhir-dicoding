@@ -27,7 +27,8 @@ nav .logo {
     font-family: 'Lilita One', sans-serif;
 }
 
-.btn-resume {
+.btn-contact {
+    text-decoration: none;
     font-family: 'Jua', sans-serif;
     background-color: #0E8388;
     font-size: 12px;
@@ -38,7 +39,7 @@ nav .logo {
     transition: transform .4s;
 }
 
-.btn-resume:hover {
+.btn-contact:hover {
     transform: scale(1.2);
 }
 
@@ -67,7 +68,7 @@ main::after {
 
 
 /* hero right*/
-.newslatter {
+#newslatter {
     float: left;
     max-width: 70%;
     padding: 20px;
@@ -84,7 +85,7 @@ main::after {
     top: 10px;
 }
 
-.newslatter form input:first-child {
+#newslatter form input:first-child {
     display: inline-block;
     padding: 14px 130px 14px 15px;
     border: 2px solid #0E8388;
@@ -92,7 +93,7 @@ main::after {
     border-radius: 30px;
 }
 
-.newslatter form input:last-child {
+#newslatter form input:last-child {
     position: relative;
     display: inline-block;
     outline: none;
@@ -135,7 +136,7 @@ main::after {
 }
 
 /* service */
-.service {
+#service {
     color: #CBE4DE;
     font-size: 16px;
     text-align: center;
@@ -185,7 +186,7 @@ main::after {
 /* end service */
 
 /* portfolio */
-.Portfolio {
+#portfolio {
     position: relative;
     color: #CBE4DE;
     font-size: 16px;
@@ -270,7 +271,7 @@ main::after {
 /* end portfolio */
 
 /* Testimoni */
-.testimoni {
+#testimoni {
     position: relative;
     color: #CBE4DE;
     font-size: 16px;
@@ -355,7 +356,7 @@ main::after {
 /* end testimoni */
 
 /* contact */
-.contact {
+#contact {
     color: #CBE4DE;
     padding: 10PX;
 }
@@ -375,8 +376,6 @@ main::after {
 footer {
     color: #CBE4DE;
     background-color: #0E8388;
-
-    /* position: absolute; */
 }
 
 /* footer end */
@@ -399,7 +398,7 @@ footer {
         gap: 10px;
     }
 
-    .newslatter {
+    #newslatter {
         font-size: 12px;
     }
 
@@ -407,7 +406,7 @@ footer {
         font-size: 8px;
     }
 
-    .newslatter form input:first-child {
+    #newslatter form input:first-child {
         font-size: 10px;
         display: inline-block;
         padding: 1px;
@@ -416,7 +415,7 @@ footer {
         border-radius: 30px;
     }
 
-    .newslatter form input:last-child {
+    #newslatter form input:last-child {
         position: absolute;
         font-size: 10px;
         outline: none;
@@ -446,7 +445,7 @@ footer {
         grid-gap: 2rem;
     }
 
-    .Portfolio {
+    #Portfolio {
         position: relative;
         color: #CBE4DE;
         font-size: 12px;
@@ -461,6 +460,7 @@ footer {
     }
 
     .card {
+        width: fit-content;
         color: #CBE4DE;
         box-sizing: border-box;
         border-style: solid;
@@ -489,8 +489,12 @@ footer {
         display: contents;
     }
 
-    .newslatter form input:last-child {
+    #newslatter form input:last-child {
         position: relative;
         left: 0px;
+    }
+
+    .card {
+        width: fit-content;
     }
 }
